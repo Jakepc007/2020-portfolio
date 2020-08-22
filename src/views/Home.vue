@@ -7,8 +7,8 @@
         </transition>
         <transition name="left-slide-slow-1" appear>
           <h2 class="secondary--text">
-            A front end developer,
-            <br />studying software engineering. 👨‍🎓
+            A Full Stack Developer,
+            <br />Studying Software Engineering. 👨‍🎓
           </h2>
         </transition>
         <transition name="right-slide" appear>

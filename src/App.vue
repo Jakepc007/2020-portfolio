@@ -17,7 +17,7 @@
 
       <template v-slot:extension v-if="$vuetify.breakpoint.name !== 'xs'">
         <transition name="left-slide" appear>
-          <v-tabs color="primary">
+          <v-tabs color="primary" class="background">
             <v-tab v-for="tab in tabs" :key="tab.title" :to="tab.link" class="primary--text">
               {{ tab.title }}
               <v-icon class="ml-2" color="primary">mdi-{{ tab.icon }}</v-icon>
@@ -38,7 +38,9 @@
     </v-app-bar>
 
     <v-main class="background">
-      <router-view />
+      <transition appear name="fade" mode="out-in">
+        <router-view />
+      </transition>
     </v-main>
   </v-app>
 </template>
@@ -61,14 +63,14 @@ export default {
         icon: "home",
       },
       {
-        title: "About Me",
-        link: "/about",
-        icon: "account",
-      },
-      {
         title: "Portfolio",
         link: "/portfolio",
         icon: "view-dashboard",
+      },
+      {
+        title: "About Me",
+        link: "/about",
+        icon: "account",
       },
       {
         title: "Contact",
@@ -89,6 +91,21 @@ export default {
 
   &-enter-active {
     transition: all 0.5s;
+  }
+}
+
+.fade {
+  &-enter {
+    opacity: 0;
+  }
+
+  &-enter-active,
+  &-leave-active {
+    transition: all 0.5s;
+  }
+
+  &-leave {
+    opacity: 0;
   }
 }
 </style>
