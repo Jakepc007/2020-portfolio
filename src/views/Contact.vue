@@ -14,14 +14,14 @@
         Phone Number
         <v-icon class="primary--text">mdi-phone</v-icon>
       </h2>
-      <h4 class="secondary--text">(+44) 07575 871146</h4>
+      <h4 class="secondary--text">(+##) ##### ######</h4>
       <v-btn class="mt-2 primary white--text">Call Me</v-btn>
       <h2 class="mt-6">
         Email
         <v-icon class="primary--text">mdi-email</v-icon>
       </h2>
       <h4 class="secondary--text">jakemorrishello@gmail.com</h4>
-      <v-btn href="mailto:jakemorrishello@gmail.com" class="mt-2 primary white--text">Send Mail</v-btn>
+      <v-btn href="mailto:jakemorrishello@gmail.com" class="mt-2 primary white--text">Send an Email</v-btn>
     </div>
   </div>
 </template>

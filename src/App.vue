@@ -13,6 +13,7 @@
           >
             Jake Morris
             <span v-if="$vuetify.breakpoint.name !== 'xs'">| Full Stack Developer</span>
+            {{JSON.stringify($route.path)}}
           </h3>
         </router-link>
       </div>
@@ -47,19 +48,15 @@
       </transition>
     </v-main>
 
-    <v-footer
-      class="pa-0"
-      v-if="$vuetify.breakpoint.name === 'xs'"
-      fixed
-      color="secondary darken-2"
-    >
+    <v-footer class="pa-0" v-if="$vuetify.breakpoint.name === 'xs'" fixed color>
       <div class="d-flex justify-space-between" style="width: 100%">
         <div
           v-for="tab in tabs"
           :key="tab.title"
           class="pa-4 d-flex flex-grow-1 justify-center align-center"
+          :class="$route.path === tab.link ? 'primary' : 'primary darken-4'"
         >
-          <v-icon large>mdi-{{tab.icon}}</v-icon>
+          <v-icon :color="$route.path === tab.link ? 'white' : 'primary'" large>mdi-{{tab.icon}}</v-icon>
         </div>
       </div>
     </v-footer>

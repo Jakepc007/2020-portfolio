@@ -10,8 +10,17 @@
       </div>
     </div>
     <div class="splash-cont">
-      <h2 class="primary--text">Intro and Education</h2>
-      <span class="primary--text text--darken-4">
+      <h2 class="primary--text">Introduction 👋</h2>
+      <span class="primary--text text--darken-3">
+        So I'm Jake. I'm glad you've taken the time to check out my personal website,
+        and if you're an employer looking for a motivated young junior developer,
+        <span
+          class="font-weight-bold primary--text text--darken-1"
+        >then I'm your guy!</span>
+      </span>
+
+      <h2 class="primary--text mt-6">Education 👨‍🎓</h2>
+      <span class="primary--text text--darken-3">
         I'm currently at
         <span
           class="font-weight-bold primary--text text--darken-1"
