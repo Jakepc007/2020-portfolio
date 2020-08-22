@@ -2,17 +2,19 @@
   <v-app>
     <v-app-bar app color="background" flat>
       <div class="d-flex align-center">
-        <h3
-          class="primary--text"
-          :style="
+        <router-link to="/">
+          <h3
+            class="primary--text"
+            :style="
             $vuetify.breakpoint.name === 'xs'
               ? 'font-size: 30px'
               : 'font-size: 30px'
           "
-        >
-          Jake Morris
-          <span v-if="$vuetify.breakpoint.name !== 'xs'">| Full Stack Developer</span>
-        </h3>
+          >
+            Jake Morris
+            <span v-if="$vuetify.breakpoint.name !== 'xs'">| Full Stack Developer</span>
+          </h3>
+        </router-link>
       </div>
 
       <template v-slot:extension v-if="$vuetify.breakpoint.name !== 'xs'">
@@ -44,6 +46,18 @@
         <router-view />
       </transition>
     </v-main>
+    <v-footer
+      v-if="$vuetify.breakpoint.name === 'xs'"
+      fixed
+      class="pa-0 elevation-16"
+      color="secondary darken-2"
+    >
+      <v-tabs>
+        <v-tab v-for="tab in tabs" :key="tab.title" :to="tab.link" class="primary--text">
+          <v-icon class="ml-2" color="primary">mdi-{{ tab.icon }}</v-icon>
+        </v-tab>
+      </v-tabs>
+    </v-footer>
   </v-app>
 </template>
 
@@ -70,7 +84,7 @@ export default {
         icon: "view-dashboard",
       },
       {
-        title: "About Me",
+        title: "About",
         link: "/about",
         icon: "account",
       },
@@ -85,6 +99,10 @@ export default {
 </script>
 
 <style scoped lang="scss">
+a {
+  text-decoration: none !important;
+}
+
 .left-slide {
   &-enter {
     transform: translateX(-200px);
