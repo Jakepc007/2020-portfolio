@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar app color="transparent" flat>
+    <v-app-bar app color="background" flat>
       <div class="d-flex align-center">
         <h3
           class="primary--text"
@@ -17,7 +17,7 @@
 
       <template v-slot:extension v-if="$vuetify.breakpoint.name !== 'xs'">
         <transition name="left-slide" appear>
-          <v-tabs color="primary" class="background">
+          <v-tabs>
             <v-tab v-for="tab in tabs" :key="tab.title" :to="tab.link" class="primary--text">
               {{ tab.title }}
               <v-icon class="ml-2" color="primary">mdi-{{ tab.icon }}</v-icon>
