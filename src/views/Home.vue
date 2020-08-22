@@ -13,8 +13,8 @@
         </transition>
         <transition name="right-slide" appear>
           <div class="mt-6">
-            <v-btn color="primary" class="white--text mr-3 mb-3">What Can I do?</v-btn>
-            <v-btn color="secondary" class="darken-1 mb-3">
+            <v-btn to="/portfolio" color="primary" class="white--text mr-3 mb-3">What Can I do?</v-btn>
+            <v-btn to="/contact" color="secondary" class="darken-1 mb-3">
               Contact Me
               <v-icon class="ml-2">mdi-phone</v-icon>
             </v-btn>
