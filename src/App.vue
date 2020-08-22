@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar app color="transparent" flat hide-on-scroll>
+    <v-app-bar app color="transparent" flat>
       <div class="d-flex align-center">
         <h3
           class="primary--text"
@@ -30,11 +30,11 @@
       <transition name="right-slide" appear>
         <v-chip color="primary">
           <v-switch ripple v-model="$vuetify.theme.dark" hide-details color="secondary"></v-switch>
-          <v-icon @click="toggleDarkMode" color="white" v-if="$vuetify.breakpoint.name !== 'xs'">
-            {{
-            $vuetify.theme.dark ? "mdi-brightness-2" : "mdi-brightness-5"
-            }}
-          </v-icon>
+          <v-icon
+            @click="toggleDarkMode"
+            color="white"
+            v-if="$vuetify.breakpoint.name !== 'xs'"
+          >{{ $vuetify.theme.dark ? "mdi-brightness-2" : "mdi-brightness-5" }}</v-icon>
         </v-chip>
       </transition>
     </v-app-bar>
