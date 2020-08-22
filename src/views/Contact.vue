@@ -3,7 +3,10 @@
     <div class="splash">
       <div>
         <h1 class="primary--text">Contact Me</h1>
-        <h2 class="secondary--text">Get in touch.</h2>
+        <h2>
+          Get in touch.
+          <span class="secondary--text">Let's Chat! 🤗</span>
+        </h2>
       </div>
     </div>
     <div class="splash-cont">
@@ -19,38 +22,6 @@
       </h2>
       <h4 class="secondary--text">jakemorrishello@gmail.com</h4>
       <v-btn href="mailto:jakemorrishello@gmail.com" class="mt-2 primary white--text">Send Mail</v-btn>
-      <form name="contact" method="POST" data-netlify="true">
-        <p>
-          <label>
-            Your Name:
-            <input type="text" name="name" />
-          </label>
-        </p>
-        <p>
-          <label>
-            Your Email:
-            <input type="email" name="email" />
-          </label>
-        </p>
-        <p>
-          <label>
-            Your Role:
-            <select name="role[]" multiple>
-              <option value="leader">Leader</option>
-              <option value="follower">Follower</option>
-            </select>
-          </label>
-        </p>
-        <p>
-          <label>
-            Message:
-            <textarea name="message"></textarea>
-          </label>
-        </p>
-        <p>
-          <button type="submit">Send</button>
-        </p>
-      </form>
     </div>
   </div>
 </template>
@@ -75,7 +46,7 @@ export default {};
   margin-right: 2rem;
 
   @media screen and (min-width: 400px) {
-    width: 70%;
+    width: 40%;
     margin-left: auto;
     margin-right: auto;
   }

@@ -46,17 +46,22 @@
         <router-view />
       </transition>
     </v-main>
+
     <v-footer
+      class="pa-0"
       v-if="$vuetify.breakpoint.name === 'xs'"
       fixed
-      class="pa-0 elevation-16"
       color="secondary darken-2"
     >
-      <v-tabs>
-        <v-tab v-for="tab in tabs" :key="tab.title" :to="tab.link" class="primary--text">
-          <v-icon class="ml-2" color="primary">mdi-{{ tab.icon }}</v-icon>
-        </v-tab>
-      </v-tabs>
+      <div class="d-flex justify-space-between" style="width: 100%">
+        <div
+          v-for="tab in tabs"
+          :key="tab.title"
+          class="pa-4 d-flex flex-grow-1 justify-center align-center"
+        >
+          <v-icon large>mdi-{{tab.icon}}</v-icon>
+        </div>
+      </div>
     </v-footer>
   </v-app>
 </template>
