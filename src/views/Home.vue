@@ -28,7 +28,7 @@
           About this website
           <v-icon color="white">mdi-chevron-down</v-icon>
         </v-card-title>
-        <v-card-text class="white--text">It's created using Vue!</v-card-text>
+        <v-card-text class="white--text">This whole thing is a work in progress! Come back later :)</v-card-text>
       </v-card>
     </transition>
   </div>
