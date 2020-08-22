@@ -2,35 +2,23 @@
   <div>
     <div class="splash">
       <div>
-        <transition name="left-slide" appear>
-          <h1 class="primary--text">Hey, I'm Jake.</h1>
-        </transition>
-        <transition name="left-slide-slow-1" appear>
-          <h2 class="secondary--text">
-            A Full Stack Developer,
-            <br />Studying Software Engineering. 👨‍🎓
-          </h2>
-        </transition>
-        <transition name="right-slide" appear>
-          <div class="mt-6">
-            <v-btn to="/portfolio" color="primary" class="white--text mr-3 mb-3">What Can I do?</v-btn>
-            <v-btn to="/contact" color="secondary" class="darken-1 mb-3">
-              Contact Me
-              <v-icon class="ml-2">mdi-phone</v-icon>
-            </v-btn>
-          </div>
-        </transition>
+        <h1 class="primary--text">
+          Hey, I'm
+          <router-link to="/about">Jake.</router-link>
+        </h1>
+        <h2 class="primary--text text--lighten-4">
+          A Full Stack Developer,
+          <br />Studying Software Engineering. 👨‍🎓
+        </h2>
+        <div class="mt-6">
+          <v-btn to="/portfolio" color="primary" class="background--text mr-3 mb-3">What Can I do?</v-btn>
+          <v-btn to="/contact" color="primary lighten-4" class="mb-3 background--text">
+            Contact Me
+            <v-icon class="ml-2">mdi-phone</v-icon>
+          </v-btn>
+        </div>
       </div>
     </div>
-    <transition name="upward-slide" appear>
-      <v-card class="splash-cont primary">
-        <v-card-title class="white--text">
-          About this website
-          <v-icon color="white">mdi-chevron-down</v-icon>
-        </v-card-title>
-        <v-card-text class="white--text">This whole thing is a work in progress! Come back later :)</v-card-text>
-      </v-card>
-    </transition>
   </div>
 </template>
 
@@ -51,7 +39,8 @@ export default {
 }
 
 .splash-cont {
-  min-height: 30vh;
+  height: 30vh;
+  overflow: hidden;
   margin-left: 2rem;
   margin-right: 2rem;
 
@@ -97,7 +86,6 @@ export default {
 
 .upward-slide {
   &-enter {
-    transform: translateY(2000px);
     opacity: 0;
   }
 

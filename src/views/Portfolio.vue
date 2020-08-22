@@ -5,7 +5,7 @@
         <h1 class="primary--text">My Portfolio</h1>
         <h2>
           Some of my recent
-          <span class="secondary--text">(and not so recent)</span>
+          <span class="primary--text text--lighten-4">(and not so recent)</span>
           work.
         </h2>
       </div>

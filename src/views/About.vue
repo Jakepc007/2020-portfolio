@@ -5,7 +5,7 @@
         <h1 class="primary--text">About Me</h1>
         <h2>
           Proffesionally,
-          <span class="secondary--text">and Personally.</span>
+          <span class="primary--text text--lighten-4">and Personally.</span>
         </h2>
       </div>
     </div>
