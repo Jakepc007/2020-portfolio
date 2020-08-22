@@ -8,31 +8,28 @@
         <transition name="left-slide-slow-1" appear>
           <h2 class="secondary--text">
             A front end developer,
-            <br />
-            studying software engineering. 👨‍🎓
+            <br />studying software engineering. 👨‍🎓
           </h2>
         </transition>
         <transition name="right-slide" appear>
           <div class="mt-6">
-            <v-btn color="primary" class="white--text mr-3 mb-3"
-              >What Can I do?</v-btn
-            >
-            <v-btn color="tertiary" class="white--text mb-3"
-              >Contact Me <v-icon class="ml-2">mdi-phone</v-icon>
+            <v-btn color="primary" class="white--text mr-3 mb-3">What Can I do?</v-btn>
+            <v-btn color="secondary" class="darken-1 mb-3">
+              Contact Me
+              <v-icon class="ml-2">mdi-phone</v-icon>
             </v-btn>
           </div>
         </transition>
       </div>
     </div>
     <transition name="upward-slide" appear>
-      <v-card class="splash-cont primary"
-        ><v-card-title class="white--text"
-          >About this website <v-icon color="white">mdi-chevron-down</v-icon>
+      <v-card class="splash-cont primary">
+        <v-card-title class="white--text">
+          About this website
+          <v-icon color="white">mdi-chevron-down</v-icon>
         </v-card-title>
-        <v-card-text class="white--text"
-          >It's created using Vue!</v-card-text
-        ></v-card
-      >
+        <v-card-text class="white--text">It's created using Vue!</v-card-text>
+      </v-card>
     </transition>
   </div>
 </template>
@@ -55,10 +52,14 @@ export default {
 
 .splash-cont {
   min-height: 30vh;
-  width: 70%;
-  // min-width: 400px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 2rem;
+  margin-right: 2rem;
+
+  @media screen and (min-width: 400px) {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .left-slide {

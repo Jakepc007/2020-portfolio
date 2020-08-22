@@ -1,15 +1,18 @@
 <template>
   <v-app>
-    <v-app-bar app color="transparent" flat dark hide-on-scroll>
+    <v-app-bar app color="transparent" flat hide-on-scroll>
       <div class="d-flex align-center">
         <h3
           class="primary--text"
           :style="
             $vuetify.breakpoint.name === 'xs'
-              ? 'font-size: 20px'
+              ? 'font-size: 30px'
               : 'font-size: 30px'
           "
-        >Jake Morris | Full Stack Developer</h3>
+        >
+          Jake Morris
+          <span v-if="$vuetify.breakpoint.name !== 'xs'">| Full Stack Developer</span>
+        </h3>
       </div>
 
       <template v-slot:extension v-if="$vuetify.breakpoint.name !== 'xs'">
