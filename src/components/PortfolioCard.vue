@@ -8,7 +8,7 @@
     <v-card-title>Research Application Tracking System</v-card-title>
     <v-card-actions>
       <v-btn text>
-        More Information
+        More Info
         <v-icon class="ml-2">mdi-eye</v-icon>
       </v-btn>
       <v-btn text>
