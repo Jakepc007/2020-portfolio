@@ -27,14 +27,16 @@
       </template>
 
       <v-spacer></v-spacer>
-      <v-chip color="primary">
-        <v-switch ripple v-model="$vuetify.theme.dark" hide-details color="secondary"></v-switch>
-        <v-icon @click="toggleDarkMode" color="white" v-if="$vuetify.breakpoint.name !== 'xs'">
-          {{
-          $vuetify.theme.dark ? "mdi-brightness-2" : "mdi-brightness-5"
-          }}
-        </v-icon>
-      </v-chip>
+      <transition name="right-slide" appear>
+        <v-chip color="primary">
+          <v-switch ripple v-model="$vuetify.theme.dark" hide-details color="secondary"></v-switch>
+          <v-icon @click="toggleDarkMode" color="white" v-if="$vuetify.breakpoint.name !== 'xs'">
+            {{
+            $vuetify.theme.dark ? "mdi-brightness-2" : "mdi-brightness-5"
+            }}
+          </v-icon>
+        </v-chip>
+      </transition>
     </v-app-bar>
 
     <v-main class="background">
@@ -86,6 +88,17 @@ export default {
 .left-slide {
   &-enter {
     transform: translateX(-200px);
+    opacity: 0;
+  }
+
+  &-enter-active {
+    transition: all 0.5s;
+  }
+}
+
+.right-slide {
+  &-enter {
+    transform: translateX(200px);
     opacity: 0;
   }
 
