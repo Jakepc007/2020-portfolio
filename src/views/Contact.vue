@@ -19,17 +19,32 @@
       </h2>
       <h4 class="secondary--text">jakemorrishello@gmail.com</h4>
       <v-btn href="mailto:jakemorrishello@gmail.com" class="mt-2 primary white--text">Send Mail</v-btn>
-      <form name="contact" netlify>
+      <form name="contact" method="POST" data-netlify="true">
         <p>
           <label>
-            Name
+            Your Name:
             <input type="text" name="name" />
           </label>
         </p>
         <p>
           <label>
-            Email
+            Your Email:
             <input type="email" name="email" />
+          </label>
+        </p>
+        <p>
+          <label>
+            Your Role:
+            <select name="role[]" multiple>
+              <option value="leader">Leader</option>
+              <option value="follower">Follower</option>
+            </select>
+          </label>
+        </p>
+        <p>
+          <label>
+            Message:
+            <textarea name="message"></textarea>
           </label>
         </p>
         <p>
