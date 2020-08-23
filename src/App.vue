@@ -31,7 +31,9 @@
     </v-app-bar>
 
     <v-main class="background pb-16">
-      <router-view />
+      <transition name="fade" mode="out-in">
+        <router-view />
+      </transition>
     </v-main>
 
     <v-footer

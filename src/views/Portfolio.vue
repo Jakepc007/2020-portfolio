@@ -5,7 +5,7 @@
         <h1 class="primary--text">My Portfolio</h1>
         <h2>
           Some of my recent
-          <span class="primary--text text--lighten-4">(and not so recent)</span>
+          <span class="primary--text text--lighten-2">(and not so recent)</span>
           work.
         </h2>
       </div>
@@ -57,5 +57,16 @@ export default {
   display: grid;
   gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.left-slide {
+  &-enter {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+
+  &-enter-active {
+    transition: all 0.8s;
+  }
 }
 </style>  

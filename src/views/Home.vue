@@ -2,20 +2,28 @@
   <div>
     <div class="splash">
       <div>
-        <h1 class="primary--text">
-          Hey, I'm
-          <router-link to="/about">Jake.</router-link>
-        </h1>
-        <h2 class="primary--text text--lighten-4">
-          A Full Stack Developer,
-          <br />Studying Software Engineering. 👨‍🎓
-        </h2>
+        <transition name="left-slide" appear>
+          <h1 class="primary--text">
+            Hey, I'm
+            <router-link to="/about">Jake.</router-link>
+          </h1>
+        </transition>
+        <transition name="left-slide-slow-1" appear>
+          <h2 class="primary--text text--lighten-2">
+            A Full Stack Developer,
+            <br />Studying Software Engineering. 👨‍🎓
+          </h2>
+        </transition>
         <div class="mt-6">
-          <v-btn to="/portfolio" color="primary" class="background--text mr-3 mb-3">What Can I do?</v-btn>
-          <v-btn to="/contact" color="primary lighten-4" class="mb-3 background--text">
-            Contact Me
-            <v-icon class="ml-2">mdi-phone</v-icon>
-          </v-btn>
+          <transition name="left-slide-slow-3" appear>
+            <v-btn to="/portfolio" color="primary" class="background--text mr-3 mb-3">What Can I do?</v-btn>
+          </transition>
+          <transition name="left-slide-slow-2" appear>
+            <v-btn to="/contact" color="primary lighten-2" class="mb-3 background--text">
+              Contact Me
+              <v-icon class="ml-2">mdi-phone</v-icon>
+            </v-btn>
+          </transition>
         </div>
       </div>
     </div>
@@ -32,7 +40,7 @@ export default {
 .splash {
   padding-left: 2rem;
   padding-right: 2rem;
-  min-height: 80vh;
+  min-height: 75vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,18 +61,40 @@ export default {
 
 .left-slide {
   &-enter {
-    transform: translateX(-50px);
+    transform: translateX(-100px);
     opacity: 0;
   }
 
   &-enter-active {
-    transition: all 0.5s;
+    transition: all 0.8s;
   }
 }
 
 .left-slide-slow-1 {
   &-enter {
-    transform: translateX(-50px);
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+
+  &-enter-active {
+    transition: all 0.8s;
+  }
+}
+
+.left-slide-slow-2 {
+  &-enter {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+
+  &-enter-active {
+    transition: all 0.8s;
+  }
+}
+
+.left-slide-slow-3 {
+  &-enter {
+    transform: translateX(-150px);
     opacity: 0;
   }
 
@@ -75,12 +105,12 @@ export default {
 
 .right-slide {
   &-enter {
-    transform: translateX(50px);
+    transform: translateX(100px);
     opacity: 0;
   }
 
   &-enter-active {
-    transition: all 0.5s;
+    transition: all 1s cubic-bezier(0.51, 0.11, 0.78, 1.04);
   }
 }
 
@@ -90,7 +120,7 @@ export default {
   }
 
   &-enter-active {
-    transition: all 1s;
+    transition: all 1s cubic-bezier(0.51, 0.11, 0.78, 1.04);
   }
 }
 </style>

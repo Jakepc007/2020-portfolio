@@ -5,13 +5,13 @@
         <h1 class="primary--text">About Me</h1>
         <h2>
           Proffesionally,
-          <span class="primary--text text--lighten-4">and Personally.</span>
+          <span class="primary--text text--lighten-2">and Personally.</span>
         </h2>
       </div>
     </div>
     <div class="splash-cont">
       <h2 class="primary--text">Introduction 👋</h2>
-      <span class="primary--text text--darken-3">
+      <span class="font--text">
         So I'm Jake. I'm glad you've taken the time to check out my personal website,
         and if you're an employer looking for a motivated young junior developer,
         <span
@@ -20,7 +20,7 @@
       </span>
 
       <h2 class="primary--text mt-6">Education 👨‍🎓</h2>
-      <span class="primary--text text--darken-3">
+      <span class="font--text">
         I'm currently at
         <span
           class="font-weight-bold primary--text text--darken-1"

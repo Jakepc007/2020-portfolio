@@ -5,7 +5,7 @@
         <h1 class="primary--text">Contact Me</h1>
         <h2>
           Get in touch.
-          <span class="primary--text text--lighten-4">Let's Discuss Opportunities! 🤗</span>
+          <span class="primary--text text--lighten-2">Let's Discuss Opportunities! 🤗</span>
         </h2>
       </div>
     </div>
@@ -14,13 +14,13 @@
         Phone Number
         <v-icon class="primary--text">mdi-phone</v-icon>
       </h2>
-      <h4 class="primary--text text--lighten-4">(+##) ##### ######</h4>
+      <h4 class="primary--text text--lighten-2">(+##) ##### ######</h4>
       <custom-button href="tel:123-456-7890">Call Me</custom-button>
       <h2 class="mt-6">
         Email
         <v-icon class="primary--text">mdi-email</v-icon>
       </h2>
-      <h4 class="primary--text text--lighten-4">jakemorrishello@gmail.com</h4>
+      <h4 class="primary--text text--lighten-2">jakemorrishello@gmail.com</h4>
       <custom-button href="mailto:jakemorrishello@gmail.com">Send an Email</custom-button>
     </div>
   </div>
