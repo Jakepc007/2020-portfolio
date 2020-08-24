@@ -12,11 +12,13 @@
     </div>
     <div class="splash-cont">
       <div class="grid">
-        <portfolio-card></portfolio-card>
-
-        <v-card>
-          <v-img src="https://i.imgur.com/1ZDnvPD.jpg" :aspect-ratio="16/9" class="align-end"></v-img>
-        </v-card>
+        <portfolio-card
+          img="https://i.imgur.com/B0XFxHg.jpg"
+          title="Research Application Tracking System"
+          link="research-application-tracking-system"
+          url="https://www.engintrac.com"
+        />
+        <portfolio-card img="https://i.imgur.com/1ZDnvPD.jpg" title="Case a Day" link="case-a-day" />
       </div>
     </div>
   </div>
@@ -42,12 +44,15 @@ export default {
 }
 
 .splash-cont {
-  margin-left: 2rem;
-  margin-right: 2rem;
-  margin-bottom: 8rem;
+  min-height: 30vh;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  max-width: 100%;
 
-  @media screen and (min-width: 1000px) {
-    width: 80%;
+  @media screen and (min-width: 800px) {
+    width: 800px;
     margin-left: auto;
     margin-right: auto;
   }
