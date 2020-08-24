@@ -25,6 +25,9 @@
             </v-btn>
           </transition>
         </div>
+        <transition name="upward-slide" appear>
+          <h2 class="mt-6 error--text text--lighten-3">Currently a Work In Progress! 👷‍♂️</h2>
+        </transition>
       </div>
     </div>
   </div>
@@ -117,10 +120,11 @@ export default {
 .upward-slide {
   &-enter {
     opacity: 0;
+    transform: translateY(100px);
   }
 
   &-enter-active {
-    transition: all 1s cubic-bezier(0.51, 0.11, 0.78, 1.04);
+    transition: all 1.2s;
   }
 }
 </style>
