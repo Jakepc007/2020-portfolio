@@ -12,6 +12,7 @@
       </div>
     </div>
     <div class="splash-cont">
+      <h2 class="primary--text">Technologies</h2>
       <v-tabs v-model="list" background-color="primary" class="primary">
         <v-tab v-for="technology in p.technologies" :key="technology.name" class="background--text">
           <v-icon color="background" class="mr-2">mdi-{{technology.icon}}</v-icon>
@@ -19,13 +20,14 @@
         </v-tab>
       </v-tabs>
       <div class="pa-4 primary background--text list-desc">{{p.technologies[list].desc}}</div>
-      <h2 class="primary--text mt-4">Scenario</h2>
+
+      <h2 class="primary--text mt-8">Scenario</h2>
       <span>
         Cardiff University were previously using a shared excel spreadsheet
         for their academics to track their research records.
       </span>
 
-      <h2 class="primary--text mt-4">
+      <h2 class="primary--text mt-8">
         Examples
         <span
           class="primary--text text--lighten-2"
@@ -143,7 +145,7 @@ export default {
   display: flex;
   align-items: center;
 
-  min-height: 20vh;
+  min-height: 40vh;
   margin-left: auto;
   margin-right: auto;
   padding-left: 2rem;
