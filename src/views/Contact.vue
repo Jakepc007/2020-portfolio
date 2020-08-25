@@ -51,7 +51,6 @@ export default {
   margin-right: 2rem;
 
   @media screen and (min-width: 400px) {
-    width: 40%;
     margin-left: auto;
     margin-right: auto;
   }
