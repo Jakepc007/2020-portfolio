@@ -26,7 +26,9 @@
           </transition>
         </div>
         <transition name="upward-slide" appear>
-          <h2 class="mt-6 error--text text--lighten-3">Currently a Work In Progress! 👷‍♂️</h2>
+          <v-alert
+            class="primary darken-2 mt-7 background--text"
+          >Currently a Work In Progress! 👷‍♂️</v-alert>
         </transition>
       </div>
     </div>

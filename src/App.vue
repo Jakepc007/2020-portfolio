@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app id="app">
     <v-app-bar app color="background" flat>
       <div class="d-flex align-center">
         <router-link to="/">
@@ -97,6 +97,11 @@ export default {
 </script>
 
 <style scoped lang="scss">
+#app {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+}
+
 a {
   text-decoration: none !important;
 }

@@ -22,10 +22,7 @@
       <div class="pa-4 primary background--text list-desc">{{p.technologies[list].desc}}</div>
 
       <h2 class="primary--text mt-8">Scenario</h2>
-      <span>
-        Cardiff University were previously using a shared excel spreadsheet
-        for their academics to track their research records.
-      </span>
+      <span>{{p.scenario}}</span>
 
       <h2 class="primary--text mt-8">
         Examples
@@ -68,6 +65,10 @@ export default {
           url: "research-application-tracking-system",
           title: "Research Application Tracking System",
           subtitle: "Cardiff University",
+          scenario: `Cardiff University were previously using a shared excel spreadsheet
+            for their academics to track their research records. Me and a few others were
+            tasked with creating a web application to dramatically improve user experience
+            and user retention. I was the primary UI / Front end engineer.`,
           link: "https://www.engintrac.com",
           images: [
             "https://i.imgur.com/B0XFxHg.jpg",
@@ -84,8 +85,9 @@ export default {
             },
             {
               name: "Vuetify",
-              desc: `Vuetify allowed me to quickly and efficiently prototype designs from a feature rich component 
-                library which follows the design principles established by Google's material design documentation`,
+              desc: `Vuetify allowed me to quickly and efficiently prototype designs from a
+                  feature rich component library which follows the design principles 
+                  established by Google's material design documentation`,
               icon: "vuejs",
             },
           ],
@@ -94,6 +96,7 @@ export default {
           url: "case-a-day",
           title: "Case a Day",
           subtitle: "Cardiff University Medical Student (Academic Purposes)",
+          scenario: "",
           link: null,
           images: [
             "https://i.imgur.com/B0XFxHg.jpg",
@@ -104,26 +107,27 @@ export default {
           technologies: [
             {
               name: "HTML",
-              desc:
-                "HTML is the foundation of the web, and in this project I learned and utilised key concepts which delivered a reliable website.",
+              desc: `HTML is the foundation of the web, and in this project I learned
+                and utilised key concepts which delivered a reliable website.`,
               icon: "language-html5",
             },
             {
               name: "CSS",
-              desc:
-                "To customise the website theme and colours, I learnt a lot about CSS. I assigned psuedo classes to elements to give the application a consistent natural feel.",
+              desc: `To customise the website theme and colours, I learnt a lot about
+                CSS. I assigned psuedo classes to elements to give the application a consistent natural feel.`,
               icon: "language-css3",
             },
             {
               name: "Materialize",
-              desc:
-                "Using Materialize gave access to pre-created JS driven psuedo-components that could be customised to fit the theme, and work on any device resolution.",
+              desc: `Using Materialize gave access to pre-created JS driven
+                psuedo-components that could be customised to fit the theme,
+                and work on any device resolution.`,
               icon: "material-design",
             },
             {
               name: "JavaScript",
-              desc:
-                "Using Materialize gave access to pre-created JS driven psuedo-components that could be customised to fit the theme, and work on any device resolution.",
+              desc: `Using Materialize gave access to pre-created JS driven 
+                psuedo-components that could be customised to fit the theme, and work on any device resolution.`,
               icon: "language-javascript",
             },
             {
