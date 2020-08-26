@@ -47,10 +47,14 @@ export default {
 
 .splash-cont {
   min-height: 30vh;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  max-width: 100%;
 
-  @media screen and (min-width: 400px) {
+  @media screen and (min-width: 800px) {
+    width: 800px;
     margin-left: auto;
     margin-right: auto;
   }
