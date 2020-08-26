@@ -49,10 +49,9 @@
           v-for="tab in tabs"
           :key="tab.title"
           class="pa-2 d-flex flex-grow-1 justify-center align-center"
-          :class="$route.path === tab.link ? 'primary lighten-2' : 'primary darken-4'"
+          :class="$route.path === tab.link ? 'primary lighten-2' : 'primary'"
         >
-          <v-icon v-if="$route.path !== tab.link" color="primary" large>mdi-{{tab.icon}}</v-icon>
-          <v-icon v-else color="background" large>mdi-{{tab.icon}}</v-icon>
+          <v-icon :color="`background`" large>mdi-{{tab.icon}}</v-icon>
         </router-link>
       </div>
     </v-footer>
