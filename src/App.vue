@@ -1,5 +1,5 @@
 <template>
-  <v-app id="app">
+  <v-app id="app" style="position: relative">
     <v-app-bar app color="background" flat>
       <div class="d-flex align-center">
         <router-link to="/">
@@ -12,7 +12,12 @@
 
       <template v-slot:extension v-if="$vuetify.breakpoint.name !== 'xs'">
         <v-tabs>
-          <v-tab v-for="tab in tabs" :key="tab.title" :to="tab.link" class="primary--text">
+          <v-tab
+            v-for="tab in tabs"
+            :key="tab.title"
+            :to="tab.link"
+            class="primary--text font-weight-bold"
+          >
             {{ tab.title }}
             <v-icon class="ml-2" color="primary">mdi-{{ tab.icon }}</v-icon>
           </v-tab>

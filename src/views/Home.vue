@@ -25,9 +25,6 @@
             </v-btn>
           </transition>
         </div>
-        <transition name="upward-slide" appear>
-          <v-alert class="primary mt-16 background--text">Currently a Work In Progress!</v-alert>
-        </transition>
       </div>
     </div>
   </div>
@@ -65,6 +62,17 @@ export default {
 .left-slide {
   &-enter {
     transform: translateX(-100px);
+    opacity: 0;
+  }
+
+  &-enter-active {
+    transition: all 0.8s;
+  }
+}
+
+.top-slide {
+  &-enter {
+    transform: translateY(-100px);
     opacity: 0;
   }
 

@@ -30,8 +30,14 @@
           class="primary--text text--lighten-2"
         >(Click the images to expand and view additional info)</span>
       </h2>
+      {{activeDialogs}}
       <div class="img-grid">
-        <v-img v-for="(img, index) in p.images" :key="index" :src="img" />
+        <v-img
+          v-for="(img, index) in p.images"
+          :key="index"
+          :src="img"
+          @click="launchDialog(index)"
+        >a</v-img>
         <!-- <v-dialog model="dialog1">
           <v-img src="https://i.imgur.com/B0XFxHg.jpg" :aspect-ratio="16/9" class="elevation-8"></v-img>
         </v-dialog>
@@ -50,9 +56,20 @@ export default {
     this.p = this.portfolio.find((p) => p.url === this.$route.params.project);
     const imageCount = this.p.images.length;
     for (let i = 0; i < imageCount; i++) {
-      console.log(i);
       this.dialogs[i] = false;
     }
+  },
+
+  methods: {
+    launchDialog(index) {
+      this.dialogs[index] = true;
+    },
+  },
+
+  computed: {
+    activeDialogs() {
+      return this.dialogs.filter((d) => d === true);
+    },
   },
 
   data() {
@@ -68,13 +85,13 @@ export default {
           scenario: `Cardiff University were previously using a shared excel spreadsheet
             for their academics to track their research records. Me and a few others were
             tasked with creating a web application to dramatically improve user experience
-            and user retention. I was the primary UI / Front end engineer.`,
+            and user retention. I was the primary UI and Front end engineer.`,
           link: "https://www.engintrac.com",
           images: [
             "https://i.imgur.com/B0XFxHg.jpg",
-            "https://i.imgur.com/B0XFxHg.jpg",
-            "https://i.imgur.com/B0XFxHg.jpg",
-            "https://i.imgur.com/B0XFxHg.jpg",
+            "https://i.imgur.com/0DUVdKf.jpg",
+            "https://i.imgur.com/xx8PRXs.jpg",
+            "https://i.imgur.com/Woi6pwf.jpg",
           ],
           technologies: [
             {
