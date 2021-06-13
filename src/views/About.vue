@@ -27,7 +27,7 @@
         I've recently graduated
         <span
           class="font-weight-bold primary--text text--darken-1"
-        >Cardiff University</span> studying
+        >Cardiff University</span> I studdied
         <span
           class="font-weight-bold primary--text text--darken-1"
         >Applied Software Engineering.</span>
