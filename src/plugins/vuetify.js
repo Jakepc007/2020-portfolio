@@ -4,6 +4,9 @@ import Vuetify from "vuetify/lib";
 Vue.use(Vuetify);
 
 export default new Vuetify({
+  breakpoint: {
+    xs: '500px'
+  },
   theme: {
     themes: {
       light: {

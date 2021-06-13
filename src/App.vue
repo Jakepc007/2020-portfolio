@@ -80,11 +80,11 @@ export default {
         link: "/",
         icon: "home",
       },
-      {
-        title: "Portfolio",
-        link: "/portfolio",
-        icon: "view-dashboard",
-      },
+      // {
+      //   title: "Portfolio",
+      //   link: "/portfolio",
+      //   icon: "view-dashboard",
+      // },
       {
         title: "About",
         link: "/about",
@@ -100,7 +100,7 @@ export default {
 };
 </script>
 
-<style scoped lang="scss">
+<style lang="scss">
 #app {
   font-family: "Poppins", sans-serif;
   font-weight: 800;
