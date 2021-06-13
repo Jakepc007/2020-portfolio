@@ -15,9 +15,9 @@
           </h2>
         </transition>
         <div class="mt-6">
-          <transition name="left-slide-slow-3" appear>
+          <!-- <transition name="left-slide-slow-3" appear>
             <v-btn to="/portfolio" color="primary" class="background--text mr-3 mb-3">What Can I do?</v-btn>
-          </transition>
+          </transition> -->
           <transition name="left-slide-slow-2" appear>
             <v-btn to="/contact" color="primary lighten-2" class="mb-3 background--text">
               Contact Me
