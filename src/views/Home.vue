@@ -11,7 +11,7 @@
         <transition name="left-slide-slow-1" appear>
           <h2 class="primary--text text--lighten-2">
             A Full Stack Developer,
-            <br />Software Engineering Graduate. 👨‍🎓
+            <br /> and Software Engineering Graduate. 👨‍🎓
           </h2>
         </transition>
         <div class="mt-6">
